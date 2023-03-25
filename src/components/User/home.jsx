@@ -1,5 +1,6 @@
 import "./home.scss";
 import History from "../../containers/cards/history";
+import Profile from "./profile";
 
 import track from "../../assets/tracking.svg";
 import meds from "../../assets/medicines.svg";
@@ -81,7 +82,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home_two">edf</div>
+      <div className="home_two">
+        <Profile />
+      </div>
     </div>
   );
 };
