@@ -3,6 +3,8 @@ import "./App.css";
 
 import Home from "./components/User/home";
 import Landing from "./components/Landing/landing";
+import Login from "./components/Landing/login";
+import Signup from "./components/Landing/signup";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
