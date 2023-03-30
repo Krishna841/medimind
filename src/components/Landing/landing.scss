@@ -1,0 +1,125 @@
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #faf5f2;
+  &_title {
+    height: 10%;
+    width: 98%;
+    padding: 0.3em 0.35em 0.1em 0.3em;
+    display: flex;
+    align-items: center;
+    background-color: #f8d9c6;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  &_box {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &_text {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &_t1 {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Bad Script";
+        font-weight: 100;
+        font-size: 44px;
+      }
+      &_t2 {
+        height: 10%;
+        width: 100%;
+        padding-bottom: 0.6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "M PLUS Rounded 1c";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+      }
+      &_container {
+        height: 35%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.49);
+        border-radius: 1.4em;
+        &_t {
+          height: 40%;
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "M PLUS Rounded 1c";
+          color: rgba(0, 0, 0, 0.63);
+        }
+        &_btn {
+          height: 25%;
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+#landing_login {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c89e85;
+  border-radius: 0.3em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#landing_signup {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  background: #eee0d5;
+  border-radius: 0.3em;
+}
+
+#hand {
+  position: absolute;
+  bottom: 42%;
+  right: 25%;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
