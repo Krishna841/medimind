@@ -1,20 +1,18 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./landing.scss";
 
 import clock from "../../assets/clock.svg";
-import Signup from "./signup";
-import Modal from "../Modal/modal";
+// import Signup from "./signup";
+// import Modal from "../Modal/modal";
 import { Link } from "react-router-dom";
 
 const Landing = () => {
-  //   const [showModal, setShowModal] = useState(false);
-  //   const toggleModal = () => {
-  //     return setShowModal(!showModal);
-  //   };
+  // const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="landing">
-      {/* <Modal showModal={showModal} setShowModal={toggleModal}>
-        <Signup />
+      {/* <Modal>
+        <Signup modal={showModal} setModal={setShowModal} />
       </Modal> */}
       <div className="landing_title">Medimind</div>
       <div className="landing_box">

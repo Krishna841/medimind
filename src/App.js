@@ -5,7 +5,7 @@ import Home from "./components/User/home";
 import Landing from "./components/Landing/landing";
 import Login from "./components/Landing/login";
 import Signup from "./components/Landing/signup";
-import Modal from "./components/Modal/modal";
+import Calendar from "./components/Calendar/calendar";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="Modal" element={<Modal />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </BrowserRouter>
   );

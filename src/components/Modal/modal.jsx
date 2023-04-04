@@ -1,22 +1,27 @@
 import "./modal.scss";
-import { useState } from "react";
 
-const Modal = ({ showModal, setShowModal }) => {
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!showModal);
-  };
+const Modal = ({ modal, setModal, children }) => {
+  // const [showmodal, setShowModal] = useState(modal);
 
+  // const toggleModal = () => {
+  //   setShowModal(!showmodal);
+  // };
   return (
     <>
-      {showModal && (
-        <div className="modal">
-          <div className="overlay" onClick={toggleModal}></div>
-          <div className="modal-box">
-            <component />
-          </div>
+      {/* <div className={modal ? "modal" : "none"} id="modal">
+        <div
+          className="overlay"
+          onClick={() => {
+            document.getElementById("modal").style.display = "none";
+          }}
+        ></div>
+      </div> */}
+      {modal ? (
+        <div className="modal" id="modal">
+          <div className="overlay" onClick={setModal(false)}></div>
+          <div className="modal-box">{children}</div>
         </div>
-      )}
+      ) : null}
     </>
   );
 };
